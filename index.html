@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inthira Laosaphan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#7e22ce',
+                            'purple-dark': '#581c87',
+                            'purple-light': '#f3e8ff',
+                            yellow: '#eab308',
+                            'yellow-light': '#fef9c3',
+                            'yellow-accent': '#facc15'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #7e22ce 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(126, 34, 206, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased bg-grid-pattern min-h-screen flex flex-col justify-between">
+
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-purple-100 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-purple to-brand-yellow flex items-center justify-center text-white font-bold text-sm shadow-md">
+                        IT
+                    </span>
+                    <span class="font-bold text-lg text-slate-800 tracking-tight">INTHIRA<span class="text-brand-purple">.</span></span>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-brand-purple transition-colors">เกี่ยวกับฉัน</a>
+                    <a href="#education" class="hover:text-brand-purple transition-colors">การศึกษา</a>
+                    <a href="#family" class="hover:text-brand-purple transition-colors">ครอบครัว</a>
+                    <a href="#contact" class="hover:text-brand-purple transition-colors">การติดต่อ</a>
+                </div>
+                <button onclick="window.print()" class="px-4 py-2 text-xs sm:text-sm font-medium text-brand-purple bg-brand-purple-light hover:bg-purple-200 rounded-full transition-all flex items-center gap-2 border border-purple-200">
+                    <i class="fa-solid fa-print"></i> พิมพ์ / Save PDF
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12">
+
+        <section id="about" class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl shadow-purple-900/5 border border-purple-100 relative overflow-hidden">
+            <!-- Decorative Accent Elements -->
+            <div class="absolute -top-12 -right-12 w-40 h-40 bg-brand-yellow-light rounded-full blur-2xl opacity-70 pointer-events-none"></div>
+            <div class="absolute -bottom-12 -left-12 w-40 h-40 bg-brand-purple-light rounded-full blur-2xl opacity-70 pointer-events-none"></div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                <!-- Profile Image -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-purple to-brand-yellow rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative w-48 h-60 sm:w-56 sm:h-72 rounded-2xl overflow-hidden border-4 border-white shadow-lg bg-slate-100">
+                            <img src="https://placehold.co/400x520/f3e8ff/7e22ce?text=Inthira+Profile" alt="นางสาวอินทิรา เหล่าสะพาน" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x520/f3e8ff/7e22ce?text=ตุ๊กตา';">
+                        </div>
+                    </div>
+                    <span class="mt-4 px-4 py-1.5 rounded-full bg-brand-yellow-light text-yellow-800 border border-yellow-200 text-xs font-semibold tracking-wide flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-graduation-cap text-brand-yellow"></i> สายวิทยาศาสตร์-คณิตศาสตร์
+                    </span>
+                </div>
+
+                <!-- Personal Data -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="h-2 w-8 bg-brand-yellow rounded-full"></span>
+                            <span class="text-xs uppercase font-semibold text-brand-purple tracking-widest">Personal Profile</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+                            นางสาวอินทิรา เหล่าสะพาน
+                        </h1>
+                        <p class="text-lg text-slate-500 font-medium">ชื่อเล่น: <span class="text-brand-purple font-semibold">ตุ๊กตา</span></p>
+                    </div>
+
+                    <!-- Highlight GPA Card -->
+                    <div class="p-4 rounded-2xl bg-gradient-to-r from-purple-900 to-brand-purple text-white shadow-lg shadow-purple-900/20 flex items-center justify-between">
+                        <div>
+                            <p class="text-purple-200 text-xs font-medium">เกรดเฉลี่ยสะสม (5 ภาคเรียน)</p>
+                            <p class="text-3xl font-extrabold text-brand-yellow-accent mt-0.5">3.44</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center backdrop-blur-sm border border-white/20">
+                            <i class="fa-solid fa-award text-2xl text-brand-yellow"></i>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm pt-2">
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <p class="text-xs text-slate-400">วันเกิด</p>
+                            <p class="font-medium text-slate-700 mt-0.5">08 ก.พ. 2550</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <p class="text-xs text-slate-400">อายุ</p>
+                            <p class="font-medium text-slate-700 mt-0.5">18 ปี</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <p class="text-xs text-slate-400">สัดส่วน</p>
+                            <p class="font-medium text-slate-700 mt-0.5">42 กก. / 155 ซม.</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <p class="text-xs text-slate-400">สัญชาติ/เชื้อชาติ</p>
+                            <p class="font-medium text-slate-700 mt-0.5">ไทย / ไทย</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <p class="text-xs text-slate-400">ศาสนา</p>
+                            <p class="font-medium text-slate-700 mt-0.5">พุทธ</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <p class="text-xs text-slate-400">เบอร์ส่วนตัว</p>
+                            <p class="font-medium text-slate-700 mt-0.5">082-030-7693</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Special Abilities -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-lg shadow-purple-900/5 border border-purple-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-yellow-light text-yellow-700 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800">ความสามารถพิเศษ</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-purple-50/50 border border-purple-100">
+                            <i class="fa-solid fa-users-line text-brand-purple text-lg"></i>
+                            <span class="font-medium text-slate-700">ด้านความเป็นผู้นำ</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-purple-50/50 border border-purple-100">
+                            <i class="fa-solid fa-palette text-brand-purple text-lg"></i>
+                            <span class="font-medium text-slate-700">วาดภาพระบายสี</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Address -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-lg shadow-purple-900/5 border border-purple-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-purple-light text-brand-purple flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-house font-bold"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800">ที่อยู่ปัจจุบัน</h2>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-slate-600 leading-relaxed text-sm">
+                        <p class="font-medium text-slate-800 mb-1">159/13 บ้านผักหนอก</p>
+                        <p>ตำบลยางน้อย อำเภอกอสุมพิสัย</p>
+                        <p>จังหวัดมหาสารคาม 44140</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="family" class="bg-white rounded-3xl p-6 sm:p-8 shadow-lg shadow-purple-900/5 border border-purple-100">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-slate-800">ข้อมูลครอบครัว</h2>
+                    <p class="text-xs text-slate-400">Family Information</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Father -->
+                <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-purple-50/30 border border-slate-200/80 hover:border-purple-200 transition-colors">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">บิดา</p>
+                                <p class="font-bold text-slate-800">นายสมชัย ทุมพัฒน์</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-1.5 text-sm">
+                        <p class="text-slate-600"><span class="text-slate-400">อาชีพ:</span> รับจ้างทั่วไป</p>
+                        <p class="text-slate-600 flex items-center gap-2">
+                            <span class="text-slate-400">เบอร์ติดต่อ:</span> 
+                            <a href="tel:0874379748" class="text-brand-purple font-medium hover:underline">087-437-9748</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mother -->
+                <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-purple-50/30 border border-slate-200/80 hover:border-purple-200 transition-colors">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-brand-purple">
+                                <i class="fa-solid fa-user-nurse"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">มารดา</p>
+                                <p class="font-bold text-slate-800">นางสาวนฤมล เหล่าสะพาน</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-1.5 text-sm">
+                        <p class="text-slate-600"><span class="text-slate-400">อาชีพ:</span> ครู</p>
+                        <p class="text-slate-600 flex items-center gap-2">
+                            <span class="text-slate-400">เบอร์ติดต่อ:</span> 
+                            <a href="tel:0890540976" class="text-brand-purple font-medium hover:underline">089-054-0976</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gradient-to-br from-brand-purple-dark to-brand-purple text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 translate-x-8 translate-y-8 w-64 h-64 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-3xl relative z-10">
+                <span class="text-brand-yellow-accent font-semibold text-xs tracking-wider uppercase">Contact Channels</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mt-1 mb-6">ข้อมูลการติดต่อ</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- Phone -->
+                    <a href="tel:0820307693" class="flex flex-col p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition-all group backdrop-blur-sm">
+                        <i class="fa-solid fa-phone text-brand-yellow-accent text-xl mb-2 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs text-purple-200">เบอร์โทรศัพท์</span>
+                        <span class="font-semibold text-sm mt-0.5">082-030-7693</span>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="flex flex-col p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition-all group backdrop-blur-sm">
+                        <i class="fa-brands fa-facebook text-brand-yellow-accent text-xl mb-2 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs text-purple-200">Facebook</span>
+                        <span class="font-semibold text-sm mt-0.5 truncate">Inthira Laosaphan</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/inth_ira13" target="_blank" rel="noopener noreferrer" class="flex flex-col p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition-all group backdrop-blur-sm">
+                        <i class="fa-brands fa-instagram text-brand-yellow-accent text-xl mb-2 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs text-purple-200">Instagram</span>
+                        <span class="font-semibold text-sm mt-0.5">@inth_ira13</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-12 border-t border-purple-100 bg-white/50 backdrop-blur-sm py-6">
+        <div class="max-w-5xl mx-auto px-4 text-center text-xs text-slate-400">
+            <p>© 2026 Inthira Laosaphan. All rights reserved.</p>
+            <p class="mt-1">Designed with Tailwind CSS for GitHub Pages</p>
+        </div>
+    </footer>
+
+</body>
+</html>
